@@ -1,0 +1,44 @@
+.about-first {
+  padding: Min(1.875vw, 30px) 0 clamp(80px, 11.25vw, 180px);
+  background-color: var(--bg-h);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: Min(11.25vw, 180px);
+
+    @include mobile {
+      grid-gap: 0;
+    }
+  }
+
+  &__item {
+
+
+    &:nth-child(odd) {
+      .main-article__content {
+        order: -1;
+
+        @include small-tablet {
+          order: initial;
+        }
+      }
+    }
+  }
+
+
+
+  @include mobile {
+    padding: 0;
+
+    &__article {
+      .main-article__image {
+        height: 100vw;
+      }
+    }
+
+    .container {
+      padding: 0;
+    }
+  }
+}

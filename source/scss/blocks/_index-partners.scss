@@ -1,0 +1,8 @@
+.index-partners {
+  padding: clamp(80px, 7.5vw, 120px) 0 clamp(80px, 11.25vw, 180px);
+  background-color: var(--bg-e);
+
+  &__top {
+    margin-bottom: clamp(30px, 3.75vw, 60px);
+  }
+}

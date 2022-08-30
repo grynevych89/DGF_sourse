@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="Uk-uk">
+  @include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+    <main>
+
+      <section class="top-section top-section--light">
+        <div class="container container--mode">
+
+          <div class="top-section__box">
+            <span class="top-section__name">
+              помилка 404
+            </span>
+
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">
+                  Головна
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="404.html" class="breadcrumbs__link">
+                  404
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="error-section">
+        <div class="container">
+          <div class="error-section__box">
+            <div class="error-section__coll">
+              404
+            </div>
+            <div class="error-section__coll">
+              <span class="error-section__title">
+                Помилка
+              </span>
+
+              <p>
+                Щось пішло не так, адже сторінка,
+                на яку ви хочете зайти більше не існує.
+                Спробуйте перевірити чи праввильно
+                написана адреса, чи перейти за
+                посиланнями нжче.
+              </p>
+
+
+              <div class="error-section__btns">
+                <a href="index.html" class="error-section__btn blue-btn-transparent">
+                  Головна
+                </a>
+
+                <a href="/" class="error-section__btn blue-btn-transparent">
+                  Назад
+                </a>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+
+    <button class="lift" id="upbutton">
+      <svg width="14" height="8">
+        <use href='img/sprite/sprite.svg#arrow-top'></use>
+      </svg>
+    </button>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

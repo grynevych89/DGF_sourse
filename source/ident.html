@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="Uk-uk">
+  @include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+    <main>
+      <section class="top-section top-section--light">
+        <div class="container container--mode">
+
+          <div class="top-section__box">
+            <span class="top-section__name">
+              Ідентифікація боргу
+            </span>
+
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">
+                  Головна
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="proposition.html" class="breadcrumbs__link">
+                  Позичальникам
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="ident-section">
+        <div class="container">
+          <div class="ident-section__inner">
+            <div class="main-top">
+              <h2 class="main-top__title">
+                реєстр боржників
+              </h2>
+
+              <p class="main-top__subtitle">
+                Дана сторінка допоможе позичальнику/боржнику ідентифікувати свою заборгованість перед ТОВ "ДІДЖИ ФІНАНС", <br> отримати швидкі докази факту відступлення прав грошової вимоги (зміни кредитора) та інформацію щодо розміру боргу.
+              </p>
+
+            </div>
+
+
+            <div class="ident-section__box">
+              <form action="#" class="modal-form ident-section__form">
+
+                <p class="modal-form__text">
+                  Оберіть кредітора з переліку низче, щоб дізнатись про заборгованність,
+                  чи напишіть ПІБ боржника у пошуковому полі.
+                </p>
+
+                <label for="#" class="modal-form__label">
+                  <input type="text" class="modal-form__input" placeholder="Назва кредитора, ЭДРПОУ, ПІБ">
+                  <button class="modal-form__search">
+                    <svg width="22" height="21">
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg>
+                  </button>
+                </label>
+                <button class="modal-form__btn modal-form__btn--transparent" type="submit">
+                  Скасувати пошук
+                </button>
+              </form>
+
+              <ul class="ident-list">
+                <li class="ident-list__row">
+                  <span class="ident-list__name ident-list__coll">
+                    Торгова марка кредитора
+                  </span>
+                  <span class="ident-list__name ident-list__coll">
+                    Первинний кредитор
+                  </span>
+                  <span class="ident-list__name ident-list__coll">
+                    Борг відступлено за дог.
+                  </span>
+                  <span class="ident-list__name ident-list__coll">
+                    Договір заключено
+                  </span>
+                  <span class="ident-list__name ident-list__coll">
+                    Дата передачі реєстру
+                  </span>
+                </li>
+
+                <li class="ident-list__row">
+                  <a href="#" class="ident-list__coll">
+                    <picture>
+                      <source type='image/webp' srcset='img/logo/img11.webp'>
+                      <img width='200' height='50' src='img/logo/img11.png' alt='logo'>
+                    </picture>
+                  </a>
+                  <button data-mobile-ident>Open mobile modal</button>
+                  <span class="ident-list__coll">
+                    <span class="ident-list__coll-name"> ТОВ «МІЛОАН»</span>
+                    <span class="ident-list__coll-value">(ЄДРПОУ: 40484607)</span>
+                  </span>
+
+                  <span class="ident-list__coll">
+                    №13Т
+                  </span>
+
+                  <span class="ident-list__coll">
+                    12.11.2021
+                  </span>
+
+                  <span class="ident-list__coll">
+                    12.11.2021
+                  </span>
+                  <div class="ident-list__hide">
+                    <div class="ident-list__wrapper">
+                      <button class="ident-list__hide-btn" data-ident>
+                        Шукати у реєстрі боржників
+                      </button>
+                      <a href="#" download="#" class="ident-list__hide-btn">
+                        <svg width='18' height='18'>
+                          <use href='img/sprite/sprite.svg#type'></use>
+                        </svg>
+                        Скачати договір
+                      </a>
+                      <a href="#" class="ident-list__hide-btn">
+                        Перейти до сторінки кредитора
+                      </a>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="ident-list__row">
+                  <a href="#" class="ident-list__coll">
+                    <picture>
+                      <source type='image/webp' srcset='img/logo/img9.webp'>
+                      <img width='200' height='50' src='img/logo/img9.png' alt='logo'>
+                    </picture>
+                  </a>
+                  <button data-mobile-ident>Open mobile modal</button>
+                  <span class="ident-list__coll">
+                    <span class="ident-list__coll-name"> ТОВ «МІЛОАН»</span>
+                    <span class="ident-list__coll-value">(ЄДРПОУ: 40484607)</span>
+                  </span>
+
+                  <span class="ident-list__coll">
+                    №13Т
+                  </span>
+
+                  <span class="ident-list__coll">
+                    12.11.2021
+                  </span>
+
+                  <span class="ident-list__coll">
+                    12.11.2021
+                  </span>
+                  <div class="ident-list__hide">
+                    <div class="ident-list__wrapper">
+                      <button class="ident-list__hide-btn" data-ident>
+                        Шукати у реєстрі боржників
+                      </button>
+                      <a href="#" download="#" class="ident-list__hide-btn">
+                        <svg width='18' height='18'>
+                          <use href='img/sprite/sprite.svg#type'></use>
+                        </svg>
+                        Скачати договір
+                      </a>
+                      <a href="#" class="ident-list__hide-btn">
+                        Перейти до сторінки кредитора
+                      </a>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="ident-list__row">
+                  <a href="#" class="ident-list__coll">
+                    <picture>
+                      <source type='image/webp' srcset='img/logo/img3.webp'>
+                      <img width='200' height='50' src='img/logo/img3.png' alt='logo'>
+                    </picture>
+                  </a>
+                  <button data-mobile-ident>Open mobile modal</button>
+                  <span class="ident-list__coll">
+                    <span class="ident-list__coll-name"> ТОВ «МІЛОАН»</span>
+                    <span class="ident-list__coll-value">(ЄДРПОУ: 40484607)</span>
+                  </span>
+
+                  <span class="ident-list__coll">
+                    №13Т
+                  </span>
+
+                  <span class="ident-list__coll">
+                    12.11.2021
+                  </span>
+
+                  <span class="ident-list__coll">
+                    12.11.2021
+                  </span>
+                  <div class="ident-list__hide">
+                    <div class="ident-list__wrapper">
+                      <button class="ident-list__hide-btn" data-ident>
+                        Шукати у реєстрі боржників
+                      </button>
+                      <a href="#" download="#" class="ident-list__hide-btn">
+                        <svg width='18' height='18'>
+                          <use href='img/sprite/sprite.svg#type'></use>
+                        </svg>
+                        Скачати договір
+                      </a>
+                      <a href="#" class="ident-list__hide-btn">
+                        Перейти до сторінки кредитора
+                      </a>
+                    </div>
+                  </div>
+
+                </li>
+
+              </ul>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+    </main>
+
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+
+    <button class="lift" id="upbutton">
+      <svg width="14" height="8">
+        <use href='img/sprite/sprite.svg#arrow-top'></use>
+      </svg>
+    </button>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

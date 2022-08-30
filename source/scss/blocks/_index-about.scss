@@ -1,0 +1,27 @@
+.index-about {
+  padding: Min(11.25vw, 180px) 0;
+
+
+  &__article {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include small-tablet {
+      grid-template-columns: initial;
+
+      .main-article__image {
+        height: 97.222vw;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 0;
+
+
+    .container {
+      padding: 0;
+    }
+  }
+
+
+}

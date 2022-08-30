@@ -1,0 +1,81 @@
+/* stylelint-disable */
+
+@mixin dfc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin dfcs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin psevdo {
+  position: absolute;
+  content: '';
+}
+
+@mixin bg_position {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+@mixin bg_cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+
+@mixin image-set($pathToImage) {
+  background-image: url("#{$pathToImage}.png");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: image-set(
+    /* stylelint-disable-next-line function-comma-newline-after */
+    /* "#{$pathToImage}.avif"type("image/avif") */
+    "#{$pathToImage}.webp"type("image/webp"),
+    "#{$pathToImage}.png"type("image/png")
+  );
+}
+
+@mixin footerToBottom {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+@mixin mr($value) {
+    &:not(:last-child) {
+        margin-right: $value;
+    }
+}
+
+@mixin ml($value) {
+    &:not(:last-child) {
+        margin-left: $value;
+    }
+}
+
+@mixin mb($value) {
+    &:not(:last-child) {
+        margin-bottom: $value;
+    }
+}
+
+@mixin mt($value) {
+    &:not(:last-child) {
+        margin-top: $value;
+    }
+}

@@ -1,0 +1,51 @@
+:root {
+  --body-bg: #D9D9D9;
+  --content-width: 1330px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --font-family: "Raleway", sans-serif; // var(--font-family);
+  --font-family2: "Lato", sans-serif; // var(--font-family2);
+
+
+  // text color
+  --color-a: #ffffff; // var(--color-a);
+  --color-b: #000000; // var(--color-b);
+  --color-с: #6A6A6A; // var(--color-с);
+  --color-d: #E7E04D; // var(--color-d);
+  --color-e: #D9D9D9; // var(--color-e);
+  --color-f: #373737; // var(--color-f);
+  --color-g: #0079C5; // var(--color-g);
+  --color-h: #000D28; // var(--color-h);
+  --color-j: #BDBDBD; // var(--color-j);
+  --color-i: #F17B7B; // var(--color-i);
+
+   // bg color
+   --bg-a: #ffffff; // var(--bg-a);
+   --bg-b: #000000; // var(--bg-b);
+   --bg-c: #0079C5; // var(--bg-c);
+   --bg-d: #E7E04D; // var(--bg-d);
+   --bg-e: #0C1A36; // var(--bg-e);
+   --bg-f: #000D28; // var(--bg-f);
+   --bg-g: #0067A8; // var(--bg-g);
+   --bg-h: #D9D9D9; // var(--bg-h);
+   --bg-i: #f2f2f2; // var(--bg-i);
+
+
+   --bg-header: #000000; // var(--bg-header);
+   --svg-fill: #0079C5; // var(--svg-fill);
+
+   // hover
+
+   --svg-fill-hover: #E7E04D; // var(--svg-fill-hover);
+
+  // border color
+  --border-a: #0079C5; // var(--border-a);
+  --border-b: #E7E04D; // var(--border-b);
+  --border-c: #D9D9D9; // var(--border-c);
+
+
+
+
+
+}

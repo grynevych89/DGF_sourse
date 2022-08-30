@@ -1,0 +1,12 @@
+.invest-section {
+  padding: 30px 0 clamp(80px, 11.25vw, 180px);
+  background-color: var(--bg-a);
+
+  &__top {
+    margin-bottom: clamp(30px, 3.75vw, 60px);
+  }
+
+  @include tablet {
+    padding-top: 80px;
+  }
+}

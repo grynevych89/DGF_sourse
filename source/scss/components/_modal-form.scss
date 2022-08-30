@@ -1,0 +1,120 @@
+.modal-form {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 20px;
+
+  &__input {
+    width: 100%;
+    height: 38px;
+    background: var(--bg-a);
+    border: 1px solid var(--bg-h);
+    border-radius: 3px;
+    text-indent: 10px;
+    position: relative;
+    z-index: 1;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--color-b);
+
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: var(--color-j);
+    }
+
+    &.error {
+      border-color: var(--color-i);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--color-a);
+    background-color: var(--bg-c);
+    transition: all .4s;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-b);
+      border: 2px solid var(--border-a);
+    }
+
+    &--transparent {
+      background-color: transparent;
+      color: var(--color-b);
+      border: 2px solid var(--border-a);
+
+      &:hover {
+        color: var(--color-a);
+        background-color: var(--bg-c);
+        transition: all .4s;
+      }
+    }
+  }
+
+  &__error {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-i);
+    margin-top: -10px;
+  }
+
+  &__label {
+    position: relative;
+  }
+
+  &__search {
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+
+    svg {
+      fill: transparent;
+
+    }
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(16px, 5vw, 20px);
+    line-height: 140%;
+
+    /* black */
+
+    color: var(--color-f);
+  }
+
+  .focus-visible ~ .modal-form__search {
+    visibility: visible;
+    opacity: 1;
+  }
+
+}

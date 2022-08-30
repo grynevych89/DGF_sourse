@@ -1,0 +1,14 @@
+.number-list {
+  display: flex;
+  grid-gap: 20px;
+
+
+  &__item {
+    display: flex;
+    grid-gap: 2px 10px;
+
+    &:nth-child(1) {
+      flex-direction: column;
+    }
+  }
+}

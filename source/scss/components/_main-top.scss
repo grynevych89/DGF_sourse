@@ -1,0 +1,49 @@
+.main-top {
+  padding-top: 20px;
+  position: relative;
+  color: var(--color-b);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(25px, 1.875vw, 30px);
+    line-height: 105%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: inherit;
+  }
+
+  &__subtitle {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px, 4.167vw, 16px);
+    line-height: 156%;
+    color: var(--color-f);
+    max-width: 1000px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    content: '';
+    background: var(--bg-c);
+    display: block;
+    max-width: 77px;
+    width: 100%;
+  }
+
+  &--yellow-line {
+    color: var(--color-a);
+
+    &::before {
+      background: var(--bg-d);
+    }
+  }
+}

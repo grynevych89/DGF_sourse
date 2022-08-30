@@ -1,0 +1,15 @@
+.aftermath-third {
+  padding: clamp(80px, 7.5vw, 120px) 0 clamp(80px, 11.25vw, 180px);
+  @include image-set('../img/how-bg');
+
+  &__top {
+    margin-bottom: clamp(30px, 3.75vw, 60px);
+  }
+
+  &__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    grid-gap:clamp(80px, 11.25vw, 180px);
+  }
+}

@@ -1,0 +1,38 @@
+.contact-section {
+  padding: clamp(80px, 7.5vw, 120px) 0 clamp(80px, 11.25vw, 180px);
+  background-color: var(--bg-a);
+
+  &__top {
+    margin-bottom: clamp(30px, 3.75vw, 60px);
+  }
+
+  &__box {
+    filter: drop-shadow(20px 20px 100px rgba(0, 0, 0, 0.1));
+  }
+
+  &__map {
+    position: relative;
+
+    img {
+      min-height: 380px;
+      filter: grayscale(100%);
+    }
+  }
+
+  &__geo {
+    position: absolute;
+    top: 43%;
+    right: 48%;
+
+    svg {
+      transition: all .4s;
+      fill: var(--svg-fill);
+    }
+
+    &:hover svg {
+      fill: #F17B7B;
+    }
+  }
+
+
+}

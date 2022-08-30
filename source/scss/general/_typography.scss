@@ -1,0 +1,136 @@
+
+
+.mail-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(233px, 17.063vw, 273px);
+  height: 38px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--font-family);
+  color: var(--color-a);
+
+  border: 1px solid var(--border-a);
+
+  transition: all 0.4s;
+
+  grid-gap: 11px;
+
+  svg {
+    transition: inherit;
+
+    fill: var(--svg-fill);
+  }
+
+  &:hover {
+    background-color: var(--bg-c);
+
+
+    svg {
+      fill: var(--bg-a);
+    }
+  }
+}
+
+.yellow-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--font-family);
+  color: var(--color-b);
+
+  background: var(--bg-d);
+  border: 1px solid transparent;
+  transition: all .4s;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid var(--border-b);
+    color: var(--color-a);
+  }
+}
+
+.yellow-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--font-family);
+  color: var(--color-a);
+
+  background-color: transparent;
+  border: 1px solid var(--border-b);
+
+
+
+  transition: all .4s;
+
+  &:hover {
+    background: var(--bg-d);
+    border: 1px solid var(--border-b);
+    color: var(--color-b);
+  }
+}
+
+.blue-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  max-width: 100%;
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(14px, 1.128vw, 15px);
+  line-height: 100%;
+  background-color: var(--bg-c);
+  color: var(--color-a);
+
+  svg {
+    fill: var(--bg-c);
+    font-size: clamp(16px, 1.504vw, 20px);
+  }
+}
+
+.blue-btn-transparent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  max-width: 100%;
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(14px, 1.128vw, 15px);
+  line-height: 100%;
+  background-color: transparent;
+  color: var(--color-b);
+  border: 2px solid  var(--bg-c);
+
+  svg {
+    fill: var(--bg-c);
+  }
+}

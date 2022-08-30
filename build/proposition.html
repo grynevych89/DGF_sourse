@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="Uk-uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <title>DG_Finance</title>
+
+    <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" as="font" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+  <div class="container container--mode">
+    <div class="header">
+
+      <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="index.html" class="logo header__logo">
+        <svg width="200" height="41">
+          <use href='img/sprite/sprite.svg#logo'></use>
+        </svg>
+      </a>
+
+      <div class="info-list header__info-list">
+        <a href="#contact" class="adress-link info-list__link anchor-button" data-scroll>
+          <span>
+            44012, Україна <br>
+            м. Київ, вул. Хмельницького 38
+          </span>
+
+          <svg width="32" height="40">
+            <use href='img/sprite/sprite.svg#location'></use>
+          </svg>
+        </a>
+
+        <ul class="number-list">
+          <li class="number-list__item">
+            <a href="tel:+380993332211" class="info-list__link">
+              +38 (099) 333-22-11
+            </a>
+            <a href="tel:+380993332211" class="info-list__link">
+              +38 (099) 333-22-11
+            </a>
+          </li>
+
+          <li class="number-list__item">
+            <a href="tel:+380993332211" class="info-list__link telegram-button">
+              <svg width="40" height="40">
+                <use href='img/sprite/sprite.svg#telegram'></use>
+              </svg>
+            </a>
+            <a href="tel:+380993332211" class="info-list__link viber-button">
+              <svg width="40" height="40">
+                <use href='img/sprite/sprite.svg#viber'></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="header__bottom">
+        <nav class="site-nav header__nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link">
+                Головна
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a href="about.html" class="site-nav__link">
+                про компанію
+              </a>
+            </li>
+            <li class="site-nav__item accordion">
+              <span class="site-nav__link" data-id="menu">
+                Позичальникам
+              </span>
+
+              <nav class="site-nav__subnav" data-content="menu">
+
+                <ul class="site-nav__sublist">
+                  <li class="site-nav__sublist-item">
+                    <a href="faq.html" class="site-nav__link">
+                      Питання та відповіді
+                    </a>
+                  </li>
+                  <li class="site-nav__sublist-item">
+                    <a href="consequences.html" class="site-nav__link">
+                      наслідки несплати боргу
+                    </a>
+                  </li>
+                  <li class="site-nav__sublist-item">
+                    <a href="ident.html" class="site-nav__link">
+                      ідентифікація боргу
+                    </a>
+                  </li>
+                </ul>
+
+              </nav>
+
+            </li>
+            <li class="site-nav__item">
+              <a href="invest.html" class="site-nav__link">
+                Інвестиції та партнерство
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a href="proposition.html" class="site-nav__link">
+                Спеціальні пропозиції
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="mailto:test@gmail.com" class="mail-btn header__btn">
+          <svg width="15" height="12">
+            <use href='img/sprite/sprite.svg#mail'></use>
+          </svg>
+          Написати листа
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="tel:+380993332211" class="mobile-menu__link">
+          +38 (099) 333-22-11
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="tel:+380993332211" class="mobile-menu__link">
+          +38 (099) 333-22-11
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+</header>
+
+    <main>
+      <section class="top-section top-section--light">
+        <div class="container container--mode">
+
+          <div class="top-section__box">
+            <span class="top-section__name">
+              Спеціальні пропозиції
+            </span>
+
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">
+                  Головна
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="proposition.html" class="breadcrumbs__link">
+                  Спеціальні пропозіції
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="proposition-section">
+        <div class="container">
+          <ul class="proposition-list">
+            <li class="proposition-list__item">
+              <div class="proposition-list__inner">
+                <div class="proposition-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/proposition.webp'>
+                    <img width='480' height='240' src='img/proposition.png' alt='image'>
+                  </picture>
+
+                  <span class="proposition-list__vidget">
+                    Діє з 17.09.22 по 22.01.23
+                  </span>
+
+                </div>
+
+                <div class="proposition-list__bottom">
+                  <span class="proposition-list__title">
+                    «коротка Назва поточної акції»
+                  </span>
+
+                  <p class="proposition-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur morbi ornare nunc magna pretium. Iaculis consectetur a erat neque, sed. Nullam tristique eu ut neque, scelerisque. Vulputate sit ipsum consectetur magna in consequat. Volutpat volutpat adipiscing quis ut.
+                  </p>
+
+                  <div class="proposition-list__hidden">
+                    <button class="proposition-list__btn" data-show>
+                      Прийняти участь
+                    </button>
+                    <a href="#" download="#" class="proposition-list__btn">
+                      <svg width='18' height='18'>
+                        <use href='img/sprite/sprite.svg#type'></use>
+                      </svg>
+                      Детальні умови
+                    </a>
+                    <a href="#" class="proposition-list__btn">
+                      Хочу консультацію
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="proposition-list__item">
+              <div class="proposition-list__inner">
+                <div class="proposition-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/proposition.webp'>
+                    <img width='480' height='240' src='img/proposition.png' alt='image'>
+                  </picture>
+
+                  <span class="proposition-list__vidget">
+                    Діє з 17.09.22 по 22.01.23
+                  </span>
+
+                </div>
+
+                <div class="proposition-list__bottom">
+                  <span class="proposition-list__title">
+                    «коротка Назва поточної акції»
+                  </span>
+
+                  <p class="proposition-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur morbi ornare nunc magna pretium. Iaculis consectetur a erat neque, sed. Nullam tristique eu ut neque, scelerisque. Vulputate sit ipsum consectetur magna in consequat. Volutpat volutpat adipiscing quis ut.
+                  </p>
+
+                  <div class="proposition-list__hidden">
+                    <button class="proposition-list__btn" data-show>
+                      Прийняти участь
+                    </button>
+                    <a href="#" download="#" class="proposition-list__btn">
+                      <svg width='18' height='18'>
+                        <use href='img/sprite/sprite.svg#type'></use>
+                      </svg>
+                      Детальні умови
+                    </a>
+                    <a href="#" class="proposition-list__btn">
+                      Хочу консультацію
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li class="proposition-list__item">
+              <div class="proposition-list__inner">
+                <div class="proposition-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/proposition.webp'>
+                    <img width='480' height='240' src='img/proposition.png' alt='image'>
+                  </picture>
+
+                  <span class="proposition-list__vidget">
+                    Діє з 17.09.22 по 22.01.23
+                  </span>
+
+                </div>
+
+                <div class="proposition-list__bottom">
+                  <span class="proposition-list__title">
+                    «коротка Назва поточної акції»
+                  </span>
+
+                  <p class="proposition-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur morbi ornare nunc magna pretium. Iaculis consectetur a erat neque, sed. Nullam tristique eu ut neque, scelerisque. Vulputate sit ipsum consectetur magna in consequat. Volutpat volutpat adipiscing quis ut.
+                  </p>
+
+                  <div class="proposition-list__hidden">
+                    <button class="proposition-list__btn" data-show>
+                      Прийняти участь
+                    </button>
+                    <a href="#" download="#" class="proposition-list__btn">
+                      <svg width='18' height='18'>
+                        <use href='img/sprite/sprite.svg#type'></use>
+                      </svg>
+                      Детальні умови
+                    </a>
+                    <a href="#" class="proposition-list__btn">
+                      Хочу консультацію
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="proposition-list__item">
+              <div class="proposition-list__inner">
+                <div class="proposition-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/proposition.webp'>
+                    <img width='480' height='240' src='img/proposition.png' alt='image'>
+                  </picture>
+
+                  <span class="proposition-list__vidget">
+                    Діє з 17.09.22 по 22.01.23
+                  </span>
+
+                </div>
+
+                <div class="proposition-list__bottom">
+                  <span class="proposition-list__title">
+                    «коротка Назва поточної акції»
+                  </span>
+
+                  <p class="proposition-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur morbi ornare nunc magna pretium. Iaculis consectetur a erat neque, sed. Nullam tristique eu ut neque, scelerisque. Vulputate sit ipsum consectetur magna in consequat. Volutpat volutpat adipiscing quis ut.
+                  </p>
+
+                  <div class="proposition-list__hidden">
+                    <button class="proposition-list__btn" data-show>
+                      Прийняти участь
+                    </button>
+                    <a href="#" download="#" class="proposition-list__btn">
+                      <svg width='18' height='18'>
+                        <use href='img/sprite/sprite.svg#type'></use>
+                      </svg>
+                      Детальні умови
+                    </a>
+                    <a href="#" class="proposition-list__btn">
+                      Хочу консультацію
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="proposition-list__item">
+              <div class="proposition-list__inner">
+                <div class="proposition-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/proposition.webp'>
+                    <img width='480' height='240' src='img/proposition.png' alt='image'>
+                  </picture>
+
+                  <span class="proposition-list__vidget">
+                    Діє з 17.09.22 по 22.01.23
+                  </span>
+
+                </div>
+
+                <div class="proposition-list__bottom">
+                  <span class="proposition-list__title">
+                    «коротка Назва поточної акції»
+                  </span>
+
+                  <p class="proposition-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur morbi ornare nunc magna pretium. Iaculis consectetur a erat neque, sed. Nullam tristique eu ut neque, scelerisque. Vulputate sit ipsum consectetur magna in consequat. Volutpat volutpat adipiscing quis ut.
+                  </p>
+
+                  <div class="proposition-list__hidden">
+                    <button class="proposition-list__btn" data-show>
+                      Прийняти участь
+                    </button>
+                    <a href="#" download="#" class="proposition-list__btn">
+                      <svg width='18' height='18'>
+                        <use href='img/sprite/sprite.svg#type'></use>
+                      </svg>
+                      Детальні умови
+                    </a>
+                    <a href="#" class="proposition-list__btn">
+                      Хочу консультацію
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="proposition-list__item">
+              <div class="proposition-list__inner">
+                <div class="proposition-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/proposition.webp'>
+                    <img width='480' height='240' src='img/proposition.png' alt='image'>
+                  </picture>
+
+                  <span class="proposition-list__vidget">
+                    Діє з 17.09.22 по 22.01.23
+                  </span>
+
+                </div>
+
+                <div class="proposition-list__bottom">
+                  <span class="proposition-list__title">
+                    «коротка Назва поточної акції»
+                  </span>
+
+                  <p class="proposition-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur morbi ornare nunc magna pretium. Iaculis consectetur a erat neque, sed. Nullam tristique eu ut neque, scelerisque. Vulputate sit ipsum consectetur magna in consequat. Volutpat volutpat adipiscing quis ut.
+                  </p>
+
+                  <div class="proposition-list__hidden">
+                    <button class="proposition-list__btn" data-show>
+                      Прийняти участь
+                    </button>
+                    <a href="#" download="#" class="proposition-list__btn">
+                      <svg width='18' height='18'>
+                        <use href='img/sprite/sprite.svg#type'></use>
+                      </svg>
+                      Детальні умови
+                    </a>
+                    <a href="#" class="proposition-list__btn">
+                      Хочу консультацію
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+  <div class="container container--mode">
+    <div class="footer">
+      <a href="index.html" class="logo">
+        <svg width="200" height="41">
+          <use href='img/sprite/sprite.svg#logo'></use>
+        </svg>
+      </a>
+
+      <nav class="site-nav footer__nav">
+        <ul class="site-nav__list footer__nav-list">
+          <li class="site-nav__item">
+            <a href="index.html" class="site-nav__link">
+              Головна
+            </a>
+          </li>
+          <li class="site-nav__item">
+            <a href="about.html" class="site-nav__link">
+              Про компанію
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a href="faq.html" class="site-nav__link">
+              Питання та відповіді
+            </a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">
+              Наслідки несплати боргу
+            </a>
+          </li>
+          <li class="site-nav__item">
+            <a href="ident.html" class="site-nav__link">
+              Iдентифікація боргу
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a href="invest.html" class="site-nav__link">
+              Інвестиції та партнерство
+            </a>
+          </li>
+          <li class="site-nav__item">
+            <a href="proposition.html" class="site-nav__link">
+              Спеціальні пропозиції
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="info-list">
+        <a href="#contact" class="adress-link info-list__link anchor-button">
+          <span>
+            44012, Україна <br>
+            м. Київ, вул. Хмельницького 38
+          </span>
+
+          <svg width="32" height="40">
+            <use href='img/sprite/sprite.svg#location'></use>
+          </svg>
+        </a>
+
+        <ul class="number-list">
+          <li class="number-list__item">
+            <a href="tel:+380993332211" class="info-list__link">
+              +38 (099) 333-22-11
+            </a>
+            <a href="tel:+380993332211" class="info-list__link">
+              +38 (099) 333-22-11
+            </a>
+          </li>
+
+          <li class="number-list__item">
+            <a href="tel:+380993332211" class="info-list__link telegram-button">
+              <svg width="40" height="40">
+                <use href='img/sprite/sprite.svg#telegram'></use>
+              </svg>
+            </a>
+            <a href="tel:+380993332211" class="info-list__link viber-button">
+              <svg width="40" height="40">
+                <use href='img/sprite/sprite.svg#viber'></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+    <span class="footer-info">
+      © 2022 Всі права захищені. <br> Дизайн та розробка — <a href="#">GD Studio</a>
+    </span>
+  </div>
+</footer>
+
+    <div class="overlay " data-overlay>
+    <div class="overlay__inner">
+      <div class="proposition-modal modal" data-proposition>
+        <div class="modal__top">
+          <span class="modal__title">
+            форма реєстрації у акції: «коротка Назва поточної акції»
+          </span>
+          <button class="close modal__close" aria-label="close-modal">
+            <svg width='12' height='12'>
+              <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal__inner">
+          <div class="proposition-modal__box">
+            <div class="proposition-modal__text">
+              <p>
+                «Дане звернення адресоване кредитору з метою
+                  уточнення статусу моєї кредитної справи та
+                  можливості скористатися умовами акції
+                  „Коротка назва поточної акції“.
+                  <br><br>
+                  Я підтверджую актуальність наданих мною
+                  контактного номера телефону та електронної
+                  скриньки, також надаю згоду на їх обробку.»
+              </p>
+            </div>
+
+            <form action="#" class="modal-form proposition-modal__form">
+              <label for="#" class="modal-form__label">
+                <input type="text" class="modal-form__input" placeholder="Ваше прізвище, ім’я та по батькові">
+              </label>
+              <label for="#" class="modal-form__label">
+                <input type="number" class="modal-form__input" placeholder="Ваш номер телефону">
+              </label>
+              <label for="#" class="modal-form__label">
+                <input type="email" class="modal-form__input error" placeholder="Ваш e-mail">
+              </label>
+              <button class="modal-form__btn" type="submit">
+                Погоджуюсь і надсилаю
+              </button>
+
+              <span class="modal-form__error">
+                Невірно введена поштова адреса
+              </span>
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="ident-mobile modal" data-ident-mobile>
+        <div class="modal__top">
+          <span class="modal__title">
+            картка ТОВ «МІЛОАН»
+          </span>
+          <button class="close modal__close" aria-label="close-modal">
+            <svg width='12' height='12'>
+              <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal__inner">
+          <div class="ident-mobile__inner">
+            <div class="ident-mobile__top">
+              <div class="ident-mobile__image">
+                <picture>
+                  <source type='image/webp' srcset='img/logo/img.webp'>
+                  <img width='200' height='50' src='img/logo/img.png' alt='image'>
+                </picture>
+              </div>
+
+              <span class="ident-mobile__name">
+                ЄДРПОУ: 40484607
+              </span>
+
+            </div>
+
+            <ul class="ident-mobile__list">
+              <li class="ident-mobile__item">
+                <span class="ident-mobile__title">
+                  Борг відступлено за договором:
+                </span>
+                <span class="ident-mobile__value">
+                  № 13Т
+                </span>
+              </li>
+              <li class="ident-mobile__item">
+                <span class="ident-mobile__title">
+                  Договір заключено:
+                </span>
+                <span class="ident-mobile__value">
+                  12.11.2021
+                </span>
+              </li>
+              <li class="ident-mobile__item">
+                <span class="ident-mobile__title">
+                  Дата передачі реєстру:
+                </span>
+                <span class="ident-mobile__value">
+                  12.11.2021
+                </span>
+              </li>
+            </ul>
+
+            <div class="ident-mobile__btns">
+              <button class="ident-mobile__btn blue-btn" data-ident>
+                Шукати у реєстрі боржників
+              </button>
+              <a href="#" download="#" class="ident-mobile__btn blue-btn-transparent">
+                <svg width='18' height='18'>
+                  <use href='img/sprite/sprite.svg#type'></use>
+                </svg>
+                Скачати договір
+              </a>
+              <a href="#" class="ident-mobile__btn blue-btn-transparent">
+                Перейти до сторінки кредитора
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="ident-modal modal" data-ident-modal>
+        <div class="modal__top">
+          <span class="modal__title">
+            Пошук боржника у реєстрі ТОВ «Tengo»
+          </span>
+          <button class="close modal__close" aria-label="close-modal">
+            <svg width='12' height='12'>
+              <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ident-modal__inner">
+          <form action="#" class="modal-form ident-modal__form">
+
+            <p class="modal-form__text">
+              Оберіть кредітора з переліку низче, щоб дізнатись про заборгованність,
+              чи напишіть ПІБ боржника у пошуковому полі.
+            </p>
+
+            <label for="#" class="modal-form__label">
+              <input type="number" class="modal-form__input" placeholder="Ваш ІПН">
+            </label>
+
+            <label for="#" class="modal-form__label">
+              <input type="number" class="modal-form__input error" placeholder="Ваш номер кредитного договору">
+            </label>
+
+            <button class="modal-form__btn" type="submit">
+              Шукати
+            </button>
+
+            <button class="modal-form__btn modal-form__btn--transparent" type="submit">
+              Скасувати пошук
+            </button>
+          </form>
+
+          <div class="search-result">
+            <span class="search-result__title">
+              Результати пошуку:
+            </span>
+
+            <ul class="search-result__table">
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  ПІБ боржника
+                </span>
+                <span class="search-result__value">
+                  Константиновский Олексій
+                  Іванович
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Реєстраційний номер облікової картки платника податків
+                </span>
+                <span class="search-result__value">
+                  363****231
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Номер
+кредитного договору
+                </span>
+                <span class="search-result__value">
+                  100923252
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Дата кредитного договору
+                </span>
+                <span class="search-result__value">
+                  12.11.2021
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Заборгованість по основному боргу (тіло кредиту), ₴
+                </span>
+                <span class="search-result__value">
+                  99 000,00
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Заборгованістьпо відсоткам, ₴
+                </span>
+                <span class="search-result__value">
+                  36 421,50
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Комісія, ₴
+                </span>
+                <span class="search-result__value">
+                  —
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Пеня, ₴
+                </span>
+                <span class="search-result__value">
+                  —
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Загальная заборгованість, ₴
+                </span>
+                <span class="search-result__value">
+                  135 421,50
+                </span>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+</div>
+
+    <button class="lift" id="upbutton">
+      <svg width="14" height="8">
+        <use href='img/sprite/sprite.svg#arrow-top'></use>
+      </svg>
+    </button>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

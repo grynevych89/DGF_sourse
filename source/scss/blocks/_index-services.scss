@@ -1,0 +1,25 @@
+.index-services {
+  padding: clamp(80px, 7.5vw, 120px) 0 clamp(80px, 11.25vw, 180px);
+  background-color: var(--bg-a);
+
+  &__top {
+    margin-bottom: clamp(30px, 3.75vw, 60px);
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px 15px;
+    align-items: flex-start;
+
+    @include laptop {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
+    }
+
+    @include mobile {
+      grid-template-columns: 100%;
+      align-items: stretch;
+    }
+  }
+}

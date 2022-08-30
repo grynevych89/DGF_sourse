@@ -1,0 +1,13 @@
+.about-section {
+  background-color: var(--color-d);
+  padding: clamp(50px, 6.667vw, 80px) 0 clamp(60px, 10.417vw, 125px);
+
+  &__top {
+    margin-bottom: clamp(40px, 7vw, 84px);
+  }
+
+  // &__list {
+  //   max-width: 1100px;
+  //   margin: 0 auto;
+  // }
+}

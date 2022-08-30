@@ -1,0 +1,266 @@
+<div class="overlay " data-overlay>
+    <div class="overlay__inner">
+      <div class="proposition-modal modal" data-proposition>
+        <div class="modal__top">
+          <span class="modal__title">
+            форма реєстрації  у акції:  «коротка Назва поточної акції»
+          </span>
+          <button class="close modal__close" aria-label="close-modal">
+            <svg width='12' height='12'>
+              <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal__inner">
+          <div class="proposition-modal__box">
+            <div class="proposition-modal__text">
+              <p>
+                “Дане звернення адресоване кредитору з метою
+                  уточнення статусу моєї кредитної справи та
+                  можливості скористатися умовами акції
+                  «Коротка назва поточної акції».
+                  <br><br>
+                  Я підтверджую актуальність наданих мною
+                  контактного номера телефону та електронної
+                  скриньки, також надаю згоду на їх обробку.”
+              </p>
+            </div>
+
+
+            <form action="#" class="modal-form proposition-modal__form">
+              <label for="#" class="modal-form__label">
+                <input type="text" class="modal-form__input" placeholder="Ваше прізвище, ім’я та по батькові">
+              </label>
+              <label for="#" class="modal-form__label">
+                <input type="number" class="modal-form__input" placeholder="Ваш номер телефону">
+              </label>
+              <label for="#" class="modal-form__label">
+                <input type="email" class="modal-form__input error" placeholder="Ваш e-mail">
+              </label>
+              <button class="modal-form__btn" type="submit">
+                Погоджуюсь і надсилаю
+              </button>
+
+              <span class="modal-form__error">
+                Невірно введена поштова адреса
+              </span>
+
+            </form>
+
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+      <div class="ident-mobile modal" data-ident-mobile>
+        <div class="modal__top">
+          <span class="modal__title">
+            картка ТОВ «МІЛОАН»
+          </span>
+          <button class="close modal__close" aria-label="close-modal">
+            <svg width='12' height='12'>
+              <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal__inner">
+          <div class="ident-mobile__inner">
+            <div class="ident-mobile__top">
+              <div class="ident-mobile__image">
+                <picture>
+                  <source type='image/webp' srcset='img/logo/img.webp'>
+                  <img width='200' height='50' src='img/logo/img.png' alt='image'>
+                </picture>
+              </div>
+
+              <span class="ident-mobile__name">
+                ЄДРПОУ: 40484607
+              </span>
+
+            </div>
+
+            <ul class="ident-mobile__list">
+              <li class="ident-mobile__item">
+                <span class="ident-mobile__title">
+                  Борг відступлено за договором:
+                </span>
+                <span class="ident-mobile__value">
+                  №13Т
+                </span>
+              </li>
+              <li class="ident-mobile__item">
+                <span class="ident-mobile__title">
+                  Договір заключено:
+                </span>
+                <span class="ident-mobile__value">
+                  12.11.2021
+                </span>
+              </li>
+              <li class="ident-mobile__item">
+                <span class="ident-mobile__title">
+                  Дата передачі реєстру:
+                </span>
+                <span class="ident-mobile__value">
+                  12.11.2021
+                </span>
+              </li>
+            </ul>
+
+            <div class="ident-mobile__btns">
+              <button class="ident-mobile__btn blue-btn" data-ident>
+                Шукати у реєстрі боржників
+              </button>
+              <a href="#" download="#" class="ident-mobile__btn blue-btn-transparent">
+                <svg width='18' height='18'>
+                  <use href='img/sprite/sprite.svg#type'></use>
+                </svg>
+                Скачати договір
+              </a>
+              <a href="#" class="ident-mobile__btn blue-btn-transparent">
+                Перейти до сторінки кредитора
+              </a>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="ident-modal modal" data-ident-modal>
+        <div class="modal__top">
+          <span class="modal__title">
+            Пошук боржника у реєстрі ТОВ «Tengo»
+          </span>
+          <button class="close modal__close" aria-label="close-modal">
+            <svg width='12' height='12'>
+              <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ident-modal__inner">
+          <form action="#" class="modal-form ident-modal__form">
+
+            <p class="modal-form__text">
+              Оберіть кредітора з переліку низче, щоб дізнатись про заборгованність,
+              чи напишіть ПІБ боржника у пошуковому полі.
+            </p>
+
+            <label for="#" class="modal-form__label">
+              <input type="number" class="modal-form__input" placeholder="Ваш ІПН">
+            </label>
+
+            <label for="#" class="modal-form__label">
+              <input type="number" class="modal-form__input error" placeholder="Ваш номер кредитного договору">
+            </label>
+
+            <button class="modal-form__btn" type="submit">
+              Шукати
+            </button>
+
+            <button class="modal-form__btn modal-form__btn--transparent" type="submit">
+              Скасувати пошук
+            </button>
+          </form>
+
+          <div class="search-result">
+            <span class="search-result__title">
+              Результати пошуку:
+            </span>
+
+            <ul class="search-result__table">
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  ПІБ боржника
+                </span>
+                <span class="search-result__value">
+                  Константиновский Олексій
+                  Іванович
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Реєстраційний номер облікової картки платника податків
+                </span>
+                <span class="search-result__value">
+                  363****231
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Номер
+кредитного договору
+                </span>
+                <span class="search-result__value">
+                  100923252
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Дата кредитного договору
+                </span>
+                <span class="search-result__value">
+                  12.11.2021
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Заборгованість по основному боргу (тіло кредиту), ₴
+                </span>
+                <span class="search-result__value">
+                  99 000,00
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Заборгованістьпо відсоткам, ₴
+                </span>
+                <span class="search-result__value">
+                  36 421,50
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Комісія, ₴
+                </span>
+                <span class="search-result__value">
+                  -
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Пеня, ₴
+                </span>
+                <span class="search-result__value">
+                  -
+                </span>
+              </li>
+              <li class="search-result__coll">
+                <span class="search-result__name">
+                  Загальная заборгованість, ₴
+                </span>
+                <span class="search-result__value">
+                  135 421,50
+                </span>
+              </li>
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+</div>
+
+
+
+

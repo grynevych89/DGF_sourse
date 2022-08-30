@@ -1,0 +1,44 @@
+.ident-modal {
+  max-width: 1400px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+    padding: 40px clamp(20px, 5.556vw, 40px);
+  }
+
+
+  &__form {
+    display: grid;
+    max-width: 960px;
+    grid-template-columns: 1fr 1fr 94px 165px;
+
+    .modal-form__text {
+      max-width: 756px;
+      grid-column: span 4;
+
+      @include tablet {
+        grid-column: span 2;
+      }
+    }
+
+    .modal-form__label {
+      display: flex;
+      @include small-tablet {
+        grid-column: span 2;
+
+        &:not(:first-child) {
+          margin-top: -10px;
+        }
+      }
+
+
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  }
+}

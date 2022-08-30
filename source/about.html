@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="Uk-uk">
+  @include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+    <main>
+
+      <section class="top-section">
+        <div class="container container--mode">
+
+          <div class="top-section__box">
+            <span class="top-section__name">
+              про компанію
+            </span>
+
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">
+                  Головна
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="about.html" class="breadcrumbs__link">
+                  О компанії
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="about-first">
+        <div class="container">
+
+          <ul class="about-first__list">
+            <li class="about-first__item">
+              <article class="main-article about-first__article">
+                <div class="main-article__image">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/about/img-mobile.webp'>
+                     <source media='(max-width: 575px)' srcset='img/about/img-mobile.png'>
+                    <source type='image/webp' srcset='img/about/img.webp'>
+                    <img width='450' height='677' src='img/about/img.png' alt='image'>
+                  </picture>
+                </div>
+
+                <div class="main-article__content">
+                  <div class="main-top main-top--yellow-line">
+                    <h2 class="main-top__title">
+                      Контроль та нагляд
+                    </h2>
+                  </div>
+
+                  <p>
+                    До 2020 року функцію нагляду та контролю діяльності компанії виконувала Національна комісія, що здійснює державне регулювання у сфері ринків фінансових послуг (НАЦКОМФІНПОСЛУГ).
+                    <br><br>
+                    З 1 липня 2020 року Національний банк України перейняв на себе функції регулятора ринку небанківських фінансових послуг: страхових, лізингових, факторингових компаній, кредитних спілок, ломбардів та інших фінансових компаній.
+                    <br><br>
+                    Компанія здійснює господарську діяльність виключно з дотриманням діючого законодавства України, норм та розпоряджень регулятора.
+                    <br><br>
+                    Якщо ви вважаєте, що в ході своєї діяльності, представниками Компанії були порушені Ваші права, можете подати скаргу скориставшись формою на сайті <a href="#">«Зворотній зв’язок»</a> та мати впевненість, що дане звернення не залишиться без уваги, а у випадку виявлення порушень – будуть вжиті відповідні заходи впливу.
+                  </p>
+                </div>
+
+              </article>
+            </li>
+            <li class="about-first__item">
+              <article class="main-article about-first__article">
+                <div class="main-article__image">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/about/img2-mobile.webp'>
+                    <source media='(max-width: 575px)' srcset='img/about/img2-mobile.png'>
+                    <source type='image/webp' srcset='img/about/img2.webp'>
+                    <img width='450' height='483' src='img/about/img2.png' alt='image'>
+                  </picture>
+                </div>
+
+                <div class="main-article__content">
+                  <div class="main-top main-top--yellow-line">
+                    <h2 class="main-top__title">
+                      Ліцензії та дозволи
+                    </h2>
+                  </div>
+
+                  <p>
+                    ТОВ "ДІДЖИ ФІНАНС" має діючу безстрокову ліцензію на
+                    <a href="#">НАДАННЯ КОШТІВ У ПОЗИКУ, В ТОМУ ЧИСЛІ І НА УМОВАХ ФІНАНСОВОГО КРЕДИТУ</a> <br>
+                    та ліцензію на
+                    <a href="#">НАДАННЯ ПОСЛУГ З ФАКТОРИНГУ</a> , що видана на підставі розпорядження нацкомфінпослуг від 31.03.2020р. за № 594
+                    <br><br>
+                    Комплексна інформаційна система Національного банку (<a href="#">КІС НБУ</a>), дає можливість в будь-який момент перевірити наявність та дійсність вказаних ліцензій.
+                  </p>
+                </div>
+
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about-info">
+        <div class="container">
+          <div class="main-top about-info__top">
+            <h2 class="main-top__title">
+              розкриття інформації
+            </h2>
+          </div>
+
+          <ul class="main-accordion main-accordion--desktop accordion">
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="1">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  інформація про установу
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="1">
+                <div class="main-accordion__sublist-item">
+                    Багатолітній досвід ТОП менеджерів компанії забезпечив впровадження ефективних робочих рішень по управлінню заборгованістю на будь-якій стадії стягнення:
+                    <br><br>
+                    <b>Pre collection</b> (профілактичні заходи, метою яких є мінімізація ризиків виникнення простроченої заборгованості);
+                    <br><br>
+                    <b>Soft collection</b> (досудове стягнення боргів на ранніх стадіях прострочення, з використанням дистанційних інструментів стягнення);
+                    <br><br>
+                    <b>Нard collection</b> (досудове стягнення боргів на більш пізніх стадіях прострочення, з проведенням розшукових заходів і особистих зустрічей);
+                    <br><br>
+                    <b>Legal (late) collection</b> (передбачає примусове стягнення заборгованості в судовому порядку, з подальшим супроводженням виконавчого провадження)
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="2">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  Режим робочого часу фінансової установи
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="2">
+                <div class="main-accordion__sublist-item">
+                  За договором факторингу (фінансування під відступлення права грошової вимоги) одна сторона (фактор) передає або зобов'язується передати грошові кошти в розпорядження другої сторони (клієнта) за плату (у будь-який передбачений договором спосіб), а клієнт відступає або зобов'язується відступити факторові своє право грошової вимоги до третьої особи (боржника). Порядок укладення та виконання договору факторингу регламентується главою 73 Цивільного кодексу України.
+                  <br><br>
+                  Наша Компанія не лише бере активну участь в тендерах з продажу портфелів NPL, а й являється однією з лідерів купівлі портфелів заборгованості у фінансових та нефінансових установах.
+                  <br><br>
+                  Ми практикуємо різноманітні партнерські програми щодо купівлі портфелів проблемних активів, а тому впевнені, що з нами Ви точно знайдете дієві алгоритми взаємовигідної співпраці!
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="3">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  про особистий прийом клієнтів
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="3">
+                <div class="main-accordion__sublist-item">
+                  Для Вас актуальні послуги:
+                  <ul>
+                    <li>
+                      консультації та роз’яснення юридичних питань щодо аспектів діяльності на ринку проблемних активів, враховуючи чинне законодавство України?
+                    </li>
+                    <li>
+                      інформування боржників належним чином оформленими повідомленнями з вимогою і претензією щодо існуючої заборгованості, роз'ясненням порядку і варіантів її погашення?
+                    </li>
+                    <li>
+                      написання позовних заяв, апеляційних та касаційні скарг, заяв про відкриття виконавчого провадження та інші документи правового характеру, а також повний супровід, в межах дії процедури судового або виконавчого провадження, в тому числі на стадії оцінки та реалізації майна?
+                    </li>
+                    <li>
+                      представлення інтересів Клієнтів за їх дорученням в судах, органах виконавчої служби та інших органах під час стягнення дебіторської заборгованості?
+                    </li>
+                  </ul>
+                  Тоді Ви точно не помилитесь з вибором, звернувшись саме до нас!
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="4">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  Перелік фінансових послуг, що надаються фінансовою установою
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="4">
+                <div class="main-accordion__sublist-item">
+                  Маєте складні боргові відносини з учасниками ринку фінансових послуг? Не вдається знайти компромісні рішення щодо врегулювання боргу, в т.ч. забезпеченого заставою, порукою, іпотекою?
+                  <br><br>
+                  16 листопада 2021 року Верховною Радою України прийнято Закон України «Про медіацію» № 1875-IX (далі – Закон), опублікувано в газеті Голос України» від 14.12.2021  № 237-238. Закон набрав чинності 15 грудня 2021 року.
+                  <br><br>
+                  В штаті компанії працюють кваліфіковані адвокати, які мають сертифікати медіаторів та зможуть сприяти предметному вирішенню боргових питань з іншими учасниками ринку!
+
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="5">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  інформація про установу
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="5">
+                <div class="main-accordion__sublist-item">
+                    Багатолітній досвід ТОП менеджерів компанії забезпечив впровадження ефективних робочих рішень по управлінню заборгованістю на будь-якій стадії стягнення:
+                    <br><br>
+                    <b>Pre collection</b> (профілактичні заходи, метою яких є мінімізація ризиків виникнення простроченої заборгованості);
+                    <br><br>
+                    <b>Soft collection</b> (досудове стягнення боргів на ранніх стадіях прострочення, з використанням дистанційних інструментів стягнення);
+                    <br><br>
+                    <b>Нard collection</b> (досудове стягнення боргів на більш пізніх стадіях прострочення, з проведенням розшукових заходів і особистих зустрічей);
+                    <br><br>
+                    <b>Legal (late) collection</b> (передбачає примусове стягнення заборгованості в судовому порядку, з подальшим супроводженням виконавчого провадження)
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="6">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  Режим робочого часу фінансової установи
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="6">
+                <div class="main-accordion__sublist-item">
+                  За договором факторингу (фінансування під відступлення права грошової вимоги) одна сторона (фактор) передає або зобов'язується передати грошові кошти в розпорядження другої сторони (клієнта) за плату (у будь-який передбачений договором спосіб), а клієнт відступає або зобов'язується відступити факторові своє право грошової вимоги до третьої особи (боржника). Порядок укладення та виконання договору факторингу регламентується главою 73 Цивільного кодексу України.
+                  <br><br>
+                  Наша Компанія не лише бере активну участь в тендерах з продажу портфелів NPL, а й являється однією з лідерів купівлі портфелів заборгованості у фінансових та нефінансових установах.
+                  <br><br>
+                  Ми практикуємо різноманітні партнерські програми щодо купівлі портфелів проблемних активів, а тому впевнені, що з нами Ви точно знайдете дієві алгоритми взаємовигідної співпраці!
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="7">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  про особистий прийом клієнтів
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="7">
+                <div class="main-accordion__sublist-item">
+                  Для Вас актуальні послуги:
+                  <ul>
+                    <li>
+                      консультації та роз’яснення юридичних питань щодо аспектів діяльності на ринку проблемних активів, враховуючи чинне законодавство України?
+                    </li>
+                    <li>
+                      інформування боржників належним чином оформленими повідомленнями з вимогою і претензією щодо існуючої заборгованості, роз'ясненням порядку і варіантів її погашення?
+                    </li>
+                    <li>
+                      написання позовних заяв, апеляційних та касаційні скарг, заяв про відкриття виконавчого провадження та інші документи правового характеру, а також повний супровід, в межах дії процедури судового або виконавчого провадження, в тому числі на стадії оцінки та реалізації майна?
+                    </li>
+                    <li>
+                      представлення інтересів Клієнтів за їх дорученням в судах, органах виконавчої служби та інших органах під час стягнення дебіторської заборгованості?
+                    </li>
+                  </ul>
+                  Тоді Ви точно не помилитесь з вибором, звернувшись саме до нас!
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="8">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  Перелік фінансових послуг, що надаються фінансовою установою
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="8">
+                <div class="main-accordion__sublist-item">
+                  Маєте складні боргові відносини з учасниками ринку фінансових послуг? Не вдається знайти компромісні рішення щодо врегулювання боргу, в т.ч. забезпеченого заставою, порукою, іпотекою?
+                  <br><br>
+                  16 листопада 2021 року Верховною Радою України прийнято Закон України «Про медіацію» № 1875-IX (далі – Закон), опублікувано в газеті Голос України» від 14.12.2021  № 237-238. Закон набрав чинності 15 грудня 2021 року.
+                  <br><br>
+                  В штаті компанії працюють кваліфіковані адвокати, які мають сертифікати медіаторів та зможуть сприяти предметному вирішенню боргових питань з іншими учасниками ринку!
+
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="9">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  інформація про установу
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="9">
+                <div class="main-accordion__sublist-item">
+                    Багатолітній досвід ТОП менеджерів компанії забезпечив впровадження ефективних робочих рішень по управлінню заборгованістю на будь-якій стадії стягнення:
+                    <br><br>
+                    <b>Pre collection</b> (профілактичні заходи, метою яких є мінімізація ризиків виникнення простроченої заборгованості);
+                    <br><br>
+                    <b>Soft collection</b> (досудове стягнення боргів на ранніх стадіях прострочення, з використанням дистанційних інструментів стягнення);
+                    <br><br>
+                    <b>Нard collection</b> (досудове стягнення боргів на більш пізніх стадіях прострочення, з проведенням розшукових заходів і особистих зустрічей);
+                    <br><br>
+                    <b>Legal (late) collection</b> (передбачає примусове стягнення заборгованості в судовому порядку, з подальшим супроводженням виконавчого провадження)
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="10">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  Режим робочого часу фінансової установи
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="10">
+                <div class="main-accordion__sublist-item">
+                  За договором факторингу (фінансування під відступлення права грошової вимоги) одна сторона (фактор) передає або зобов'язується передати грошові кошти в розпорядження другої сторони (клієнта) за плату (у будь-який передбачений договором спосіб), а клієнт відступає або зобов'язується відступити факторові своє право грошової вимоги до третьої особи (боржника). Порядок укладення та виконання договору факторингу регламентується главою 73 Цивільного кодексу України.
+                  <br><br>
+                  Наша Компанія не лише бере активну участь в тендерах з продажу портфелів NPL, а й являється однією з лідерів купівлі портфелів заборгованості у фінансових та нефінансових установах.
+                  <br><br>
+                  Ми практикуємо різноманітні партнерські програми щодо купівлі портфелів проблемних активів, а тому впевнені, що з нами Ви точно знайдете дієві алгоритми взаємовигідної співпраці!
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="11">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  про особистий прийом клієнтів
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="11">
+                <div class="main-accordion__sublist-item">
+                  Для Вас актуальні послуги:
+                  <ul>
+                    <li>
+                      консультації та роз’яснення юридичних питань щодо аспектів діяльності на ринку проблемних активів, враховуючи чинне законодавство України?
+                    </li>
+                    <li>
+                      інформування боржників належним чином оформленими повідомленнями з вимогою і претензією щодо існуючої заборгованості, роз'ясненням порядку і варіантів її погашення?
+                    </li>
+                    <li>
+                      написання позовних заяв, апеляційних та касаційні скарг, заяв про відкриття виконавчого провадження та інші документи правового характеру, а також повний супровід, в межах дії процедури судового або виконавчого провадження, в тому числі на стадії оцінки та реалізації майна?
+                    </li>
+                    <li>
+                      представлення інтересів Клієнтів за їх дорученням в судах, органах виконавчої служби та інших органах під час стягнення дебіторської заборгованості?
+                    </li>
+                  </ul>
+                  Тоді Ви точно не помилитесь з вибором, звернувшись саме до нас!
+                </div>
+              </div>
+
+            </li>
+            <li class="main-accordion__item">
+              <button class="main-accordion__btn" data-id="12">
+                <span class="main-accordion__btn-icon">
+                  <svg width="15" height="8">
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <span class="main-accordion__btn-title">
+                  Перелік фінансових послуг, що надаються фінансовою установою
+                </span>
+              </button>
+
+              <div class="main-accordion__sublist" data-content="12">
+                <div class="main-accordion__sublist-item">
+                  Маєте складні боргові відносини з учасниками ринку фінансових послуг? Не вдається знайти компромісні рішення щодо врегулювання боргу, в т.ч. забезпеченого заставою, порукою, іпотекою?
+                  <br><br>
+                  16 листопада 2021 року Верховною Радою України прийнято Закон України «Про медіацію» № 1875-IX (далі – Закон), опублікувано в газеті Голос України» від 14.12.2021  № 237-238. Закон набрав чинності 15 грудня 2021 року.
+                  <br><br>
+                  В штаті компанії працюють кваліфіковані адвокати, які мають сертифікати медіаторів та зможуть сприяти предметному вирішенню боргових питань з іншими учасниками ринку!
+
+                </div>
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="about-frouth">
+        <div class="container">
+          <article class="main-article about-frouth__article">
+            <div class="main-article__content">
+              <div class="main-top main-top--yellow-line">
+                <h2 class="main-top__title">
+                  Інформація щодо врегулювання
+                  простроченої заборгованості
+                </h2>
+              </div>
+              <p>
+                З інформацією щодо врегулювання простроченої заборгованості ТОВ «ДІДЖИ ФІНАНС» ви можете ознайомитися за посиланням:
+                <br><br>
+                <a href="#">
+                  Порядок взаємодії із споживачем фінансових послуг та іншими особами при врегулюванні простроченої заборгованості (вимоги щодо етичної поведінки)
+                </a>
+                <br><br>
+                <a href="#">
+                  Порядок відступлення права вимоги за договором про споживчий кредит новому кредитодавцю.
+                </a>
+                <br><br>
+                <a href="#">
+                  Порядок і спосіб погашення простроченої заборгованості.
+                </a>
+                <br><br>
+                <a href="#">
+                  Порядок повідомлення ТОВ «ДІДЖИ ФІНАНС» про те, що інтереси споживача фінансових послуг при врегулюванні простроченої заборгованості представляє його уповноважений представник.
+                </a>
+
+              </p>
+            </div>
+            <div class="main-article__image">
+              <picture>
+                <source type='image/webp' media='(max-width: 575px)' srcset='img/about/img3-mobile.webp'>
+                <source media='(max-width: 575px)' srcset='img/about/img3-mobile.png'>
+                <source type='image/webp' srcset='img/about/img3.webp'>
+                <img width='450' height='674' src='img/about/img3.png' alt='image'>
+              </picture>
+            </div>
+
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+
+    <button class="lift" id="upbutton">
+      <svg width="14" height="8">
+        <use href='img/sprite/sprite.svg#arrow-top'></use>
+      </svg>
+    </button>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

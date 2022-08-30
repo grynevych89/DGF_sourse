@@ -1,0 +1,11 @@
+.how-section {
+  padding: clamp(80px, 7.5vw, 120px) 0 clamp(80px, 11.25vw, 180px);
+  @include image-set('../img/how-bg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__top {
+    margin-bottom: clamp(30px, 3.75vw, 60px);
+  }
+}

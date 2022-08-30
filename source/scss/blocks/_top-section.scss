@@ -1,0 +1,57 @@
+.top-section {
+  --border-image:url("data:image/svg+xml,%3Csvg width='15' height='81' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h15v11.8L0 25.9V0Z' fill='%23E7E04D'/%3E%3Cpath d='m0 25.6 15-14v22.5l-15 14V25.7Z' fill='%23D62F80'/%3E%3Cpath d='m0 48 15-14.2v22L0 71.2v-23Z' fill='%233B62AD'/%3E%3Cpath d='m0 70.8 15-15V81H0V70.8Z' fill='%2393C955'/%3E%3C/svg%3E");
+  padding-bottom: Min(3.125vw, 50px);
+  background-color: var(--bg-h);
+
+  &--light {
+    background-color: var(--bg-a);
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  &__name {
+    display: flex;
+    width: fit-content;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(30px, 3.889vw, 35px);
+    line-height: 110%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-a);
+    position: relative;
+    background-color: var(--bg-e);
+    padding: 20px clamp(15px, 3.125vw, 50px) 20px calc(15px + clamp(25px, 3.125vw, 50px));
+
+
+    &::before {
+      width: 15px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      position: absolute;
+      background-image: var(--border-image);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    padding: 0;
+
+    .container {
+      padding: 0;
+    }
+  }
+}

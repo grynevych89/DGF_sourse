@@ -1,0 +1,66 @@
+.contact-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-gap: 40px;
+  max-width: 400px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: clamp(20px, 2.5vw, 40px);
+
+
+    @include mobile {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 10px;
+
+    &:nth-child(1) {
+      grid-column: span 2;
+
+      @include mobile {
+        grid-column: initial;
+      }
+    }
+  }
+
+  &__name {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--color-d);
+
+  }
+
+  &__value {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    color: var(--color-a);
+  }
+
+
+  &__btn {
+    max-width: 190px;
+    grid-gap: 10px;
+
+    svg {
+      fill: currentColor;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+}

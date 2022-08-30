@@ -1,0 +1,25 @@
+.about-frouth {
+  padding: clamp(40px, 11.25vw, 180px) 0 clamp(40px, 11.25vw, 180px);
+  @include image-set('../img/how-bg');
+
+
+  // @include small-tablet {
+  //   .main-article__image {
+  //     order: -1;
+  //   }
+  // }
+
+  @include mobile {
+    padding: 0;
+
+    &__article {
+      .main-article__image {
+        height: 100vw;
+      }
+    }
+
+    .container {
+      padding: 0;
+    }
+  }
+}

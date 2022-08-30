@@ -1,0 +1,25 @@
+.invest-third {
+  background-color: var(--bg-a);
+  padding: clamp(80px, 11.25vw, 180px) 0;
+
+  &__article {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include small-tablet {
+      grid-template-columns: initial;
+
+      .main-article__image {
+        height: 97.222vw;
+      }
+    }
+  }
+
+  @include small-tablet {
+
+    .container {
+      padding: 0;
+    }
+
+    padding: 0;
+  }
+}

@@ -1,0 +1,113 @@
+.search-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  grid-gap: 20px;
+
+  &__title {
+    text-align: center;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-b);
+
+    @include for-tablet {
+      display: none;
+    }
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: 238px repeat(8, 1fr);
+
+
+    @include laptop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include small-tablet {
+      grid-template-columns: 100%;
+      width: 100%;
+    }
+  }
+
+  &__coll {
+    display: grid;
+    grid-template-rows: minmax(90px, 1fr) 50px;
+    text-align: center;
+
+    @include laptop {
+      grid-template-rows: initial;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
+    }
+
+    @include small-tablet {
+      grid-template-columns: 100%;
+    }
+
+    @include mobile {
+      border: 1px solid var(--border-c);
+      text-align: left;
+      padding: 10px 20px;
+      grid-gap: 5px;
+    }
+
+
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-i);
+    padding: 5px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--color-с);
+    border: 1px solid var(--border-c);
+
+    @include small-tablet {
+      border: none;
+
+    }
+
+    @include mobile {
+      background-color: transparent;
+      justify-content: flex-start;
+      padding: 0;
+    }
+  }
+
+  &__value {
+    border: 1px solid var(--border-c);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--color-f);
+
+    @include mobile {
+      border: none;
+      justify-content: flex-start;
+      padding: 0;
+    }
+  }
+}

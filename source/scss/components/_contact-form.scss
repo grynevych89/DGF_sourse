@@ -1,0 +1,98 @@
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-gap: 30px;
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(17px, 1.25vw, 20px);
+    line-height: 105%;
+    color: var(--color-a);
+  }
+
+  &__inner {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "name area"
+    "phone area"
+    "email area"
+    "button button";
+
+    @include mobile {
+      grid-template-areas: initial;
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__area {
+    grid-area: area;
+
+    @include mobile {
+      grid-area: initial;
+    }
+  }
+
+  &__label {
+    height: 38px;
+
+    &[for="name"] {
+      grid-area: name;
+    }
+
+    &[for="phone"] {
+      grid-area: phone;
+    }
+
+    &[for="email"] {
+      grid-area: email;
+    }
+
+    @include mobile {
+      grid-area: initial !important;
+    }
+
+  }
+
+  &__btn {
+    max-width: 250px;
+    margin: 10px auto 0;
+    grid-area: button;
+
+    @include mobile {
+      grid-area: initial;
+      max-width: 100%;
+    }
+  }
+
+  &__area {
+    min-height: 100px;
+  }
+
+  input, textarea {
+    padding: 10px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--color-b);
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: var(--color-j);
+    }
+  }
+}
