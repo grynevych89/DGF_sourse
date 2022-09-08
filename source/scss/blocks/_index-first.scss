@@ -18,7 +18,7 @@
   }
 
   @include mobile {
-    background: linear-gradient(180deg, rgba(19,36,66,0) 40vw, #000610 75vw, #000610 100%)
+    background: linear-gradient(180deg, rgba(19,36,66,0) 100vw, #000610 75vw, #000610 100%)
     ,url('../img/first-bg-mobile.png');
     padding-top: 79.722vw;
     padding-bottom: 80px;

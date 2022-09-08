@@ -142,7 +142,7 @@ input[type="number"] {
 
 .container {
   width: 100%;
-  max-width: var(--content-width);
+  max-width: var(--container-width);
   margin: 0 auto;
   position: relative;
   padding: 0 var(--container-offset);
@@ -178,6 +178,10 @@ input[type="number"] {
   height: 100vh;
   overscroll-behavior: none !important;
   scroll-behavior: none !important;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .lift {
@@ -216,6 +220,10 @@ input[type="number"] {
   overflow-y: scroll !important;
   transition: opacity .5s ease;
   opacity: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
 
 

@@ -42,7 +42,7 @@
   &__btn {
     display: flex;
     align-items: center;
-    grid-gap: 0 30px;
+    grid-gap: 0 clamp(30px, 3.759vw, 50px);
     width: 100%;
     font-family: var(--font-family);
     font-style: normal;
@@ -51,7 +51,7 @@
     line-height: 110%;
     text-transform: uppercase;
     color: var(--color-f);
-    padding: 20px;
+    padding: 20px 20px 18px;
     position: relative;
     border-bottom: 1px solid transparent;
     overflow: hidden;
@@ -138,10 +138,14 @@
       }
     }
 
+    .main-accordion__btn {
+      border: none;
+    }
+
 
     @include for-laptop {
       .main-accordion__sublist-item {
-        padding-left: 65px;
+        padding-left: 85px;
       }
     }
   }
@@ -164,6 +168,7 @@
 
     img,picture {
       display: flex;
+      max-height: 235px;
     }
 
     .main-accordion__sublist-item {

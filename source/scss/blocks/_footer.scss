@@ -92,12 +92,6 @@ footer {
       line-height: 16px;
       grid-gap: 8px;
 
-      @include mobile {
-        br {
-          display: none;
-        }
-      }
-
       svg {
         width: 23px;
 

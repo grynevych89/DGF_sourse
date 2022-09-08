@@ -93,6 +93,13 @@
   }
 
   a.ident-list__coll {
+
+    picture, img {
+      object-fit: contain;
+      max-height: 70px;
+    }
+
+
     @include small-tablet {
       pointer-events: none;
     }

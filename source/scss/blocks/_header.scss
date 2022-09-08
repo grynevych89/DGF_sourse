@@ -4,7 +4,7 @@ header {
 
 .header {
   color: var(--color-a);
-  padding: clamp(20px, 1.875vw, 30px) 0 20px;
+  padding: clamp(20px, 1.875vw, 28px) 0 20px;
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: clamp(20px, 1.875vw, 30px);
@@ -58,10 +58,17 @@ header {
       width: clamp(100px, 41.667vw, 200px);
     }
 
+    @include mobile {
+      svg {
+        max-height: 30px;
+      }
+    }
+
     @media (max-width: 360px) {
       max-width: 100px;
     }
   }
+
 
 
   @include tablet {

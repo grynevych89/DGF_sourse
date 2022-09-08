@@ -90,13 +90,19 @@
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    visibility: hidden;
-    opacity: 0;
+    // visibility: hidden;
+    // opacity: 0;
     transition: all .2s;
 
     svg {
       fill: transparent;
 
+    }
+
+    &:hover {
+      svg {
+        opacity: .8;
+      }
     }
   }
 

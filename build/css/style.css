@@ -1497,7 +1497,7 @@ input[type=number] {
 
 .container {
   width: 100%;
-  max-width: var(--content-width);
+  max-width: var(--container-width);
   margin: 0 auto;
   position: relative;
   padding: 0 var(--container-offset);
@@ -1532,6 +1532,9 @@ input[type=number] {
   -ms-scroll-chaining: none !important;
       overscroll-behavior: none !important;
   scroll-behavior: none !important;
+}
+.dis-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .lift {
@@ -1578,6 +1581,9 @@ input[type=number] {
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
   opacity: 0;
+}
+.overlay::-webkit-scrollbar {
+  display: none;
 }
 .overlay.active {
   background-color: rgba(0, 0, 0, 0.5);
@@ -2156,7 +2162,7 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 0 30px;
+  grid-gap: 0 clamp(30px, 3.759vw, 50px);
   width: 100%;
   font-family: var(--font-family);
   font-style: normal;
@@ -2165,7 +2171,7 @@ fieldset {
   line-height: 110%;
   text-transform: uppercase;
   color: var(--color-f);
-  padding: 20px;
+  padding: 20px 20px 18px;
   position: relative;
   border-bottom: 1px solid transparent;
   overflow: hidden;
@@ -2253,9 +2259,12 @@ fieldset {
     display: none;
   }
 }
+.main-accordion--desktop .main-accordion__btn {
+  border: none;
+}
 @media (min-width: 1240px) {
   .main-accordion--desktop .main-accordion__sublist-item {
-    padding-left: 65px;
+    padding-left: 85px;
   }
 }
 .main-accordion--images {
@@ -2277,6 +2286,7 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 235px;
 }
 .main-accordion--images .main-accordion__sublist-item {
   display: grid;
@@ -2494,6 +2504,8 @@ fieldset {
   z-index: 2;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
   pointer-events: none;
 }
 .multirow-slider__hidden-link {
@@ -2502,7 +2514,24 @@ fieldset {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
+  width: 100%;
   color: var(--color-g);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.multirow-slider__hidden-link:hover {
+  background-color: var(--bg-c);
+  color: var(--color-a);
 }
 @media (min-width: 1024px) {
   .multirow-slider__hidden-link {
@@ -2511,17 +2540,15 @@ fieldset {
 }
 @media (max-width: 1024px) {
   .multirow-slider__hidden {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
     height: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    justify-items: center;
+    justify-self: center;
     border-top: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2556,6 +2583,7 @@ fieldset {
   font-size: 15px;
   line-height: 18px;
   color: var(--color-g);
+  height: 100%;
   background-color: var(--bg-a);
 }
 .multirow-slider__download svg {
@@ -2565,6 +2593,13 @@ fieldset {
   .multirow-slider__download {
     padding: 0;
   }
+}
+.multirow-slider__download:hover {
+  background-color: var(--bg-c);
+  color: var(--color-a);
+}
+.multirow-slider__download:hover svg {
+  fill: var(--bg-a);
 }
 
 .bg-dark .main-list__top {
@@ -2674,6 +2709,9 @@ fieldset {
 @media (max-width: 576px) {
   .prop-list__item {
     grid-template-columns: 100%;
+  }
+  .prop-list__item:last-child br {
+    display: none;
   }
 }
 .prop-list__name {
@@ -3244,13 +3282,14 @@ fieldset {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  visibility: hidden;
-  opacity: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .modal-form__search svg {
   fill: transparent;
+}
+.modal-form__search:hover svg {
+  opacity: 0.8;
 }
 .modal-form__text {
   font-family: var(--font-family);
@@ -3454,6 +3493,11 @@ fieldset {
     border-top: 1px solid var(--border-c);
     border-bottom: 1px solid var(--border-c);
   }
+}
+.ident-list a.ident-list__coll picture, .ident-list a.ident-list__coll img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 70px;
 }
 @media (max-width: 768px) {
   .ident-list a.ident-list__coll {
@@ -3925,7 +3969,7 @@ header {
 
 .header {
   color: var(--color-a);
-  padding: clamp(20px, 1.875vw, 30px) 0 20px;
+  padding: clamp(20px, 1.875vw, 28px) 0 20px;
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: clamp(20px, 1.875vw, 30px);
@@ -3973,6 +4017,11 @@ header {
 @media (max-width: 1024px) {
   .header__logo {
     width: clamp(100px, 41.667vw, 200px);
+  }
+}
+@media (max-width: 576px) {
+  .header__logo svg {
+    max-height: 30px;
   }
 }
 @media (max-width: 360px) {
@@ -4107,13 +4156,6 @@ footer {
     line-height: 16px;
     grid-gap: 8px;
   }
-}
-@media (max-width: 576px) and (max-width: 576px) {
-  .footer .info-list__link br {
-    display: none;
-  }
-}
-@media (max-width: 576px) {
   .footer .info-list__link svg {
     width: 23px;
   }
@@ -4192,8 +4234,8 @@ footer {
 }
 @media (max-width: 576px) {
   .index-first {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(40vw, rgba(19, 36, 66, 0)), color-stop(75vw, #000610), to(#000610)), url("../img/first-bg-mobile.png");
-    background: linear-gradient(180deg, rgba(19, 36, 66, 0) 40vw, #000610 75vw, #000610 100%), url("../img/first-bg-mobile.png");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100vw, rgba(19, 36, 66, 0)), color-stop(75vw, #000610), to(#000610)), url("../img/first-bg-mobile.png");
+    background: linear-gradient(180deg, rgba(19, 36, 66, 0) 100vw, #000610 75vw, #000610 100%), url("../img/first-bg-mobile.png");
     padding-top: 79.722vw;
     padding-bottom: 80px;
     background-position: center top;

@@ -12,6 +12,12 @@
     grid-gap: 2px clamp(15px, 1.875vw, 30px);
 
     @include mobile  {
+
+      &:last-child {
+        br {
+          display: none;
+        }
+      }
       grid-template-columns: 100%;
     }
   }
